@@ -32,6 +32,7 @@ class ModelMetaclass(type):
         attrs['__table__'] = name
         return type.__new__(cls, name, bases, attrs)
 
+# 使用metaclass类
 class Model(dict, metaclass=ModelMetaclass):
     def __init__(self, **kw):
         super(Model, self).__init__(**kw)
