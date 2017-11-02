@@ -94,11 +94,27 @@ SQL = {
                         `ParentID`, `RecycleID`, `CreateTime`, `LocalModifyTime`, \
                         `ServerModifyTime`, `IsRecycled`, `IsRemoved`, `IsModify` \
                         from `el_user_category`',
-        'insert_sql': "INSERT ignore INTO `psmc_user_study_group`( \
+        'insert_sql': "INSERT INTO `psmc_user_study_group`( \
                         `GroupId`, `GroupName`, `GroupPath`, `UserName`, \
                         `ParentId`, `RecycleId`, `CTime`, `UTime`, \
                         `ServerModifyTime`, `IsRecycled`, `IsRemoved`, `IsModify`) \
                         values(%s, %s, '', %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+        'merge_handle': None
+    },
+
+    # 文献document
+    'document': {
+        'select_sql': 'SELECT \
+                        `CategoryID`, `CategoryName`, `UserID`, \
+                        `ParentID`, `RecycleID`, `CreateTime`, `LocalModifyTime`, \
+                        `ServerModifyTime`, `IsRecycled`, `IsRemoved`, `IsModify` \
+                        from `el_user_litera_info`',
+        'insert_sql': "INSERT INTO `document`( \
+                        `GroupId`, `GroupName`, `GroupPath`, `UserName`, \
+                        `ParentId`, `RecycleId`, `CTime`, `UTime`, \
+                        `ServerModifyTime`, `IsRecycled`, `IsRemoved`, `IsModify`) \
+                        values(%s, %s, '', %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+        'update_sql': "UPDATE document set %s='%s' where %s='%s';",
         'merge_handle': None
     },
 
@@ -121,18 +137,18 @@ async def select_task(loop, queue):
 async def insert_task(loop, queue):
     ''' The task to insert data to PSMC. '''
     sql = SQL['group_category']['insert_sql']
-    pool = await create_pool(loop, host='192.168.106.231', port=3306, \
-        user='root', password='cnkidras', db='psmc', connect_timeout=10)
+    pool = await create_pool(loop, host='192.168.103.53', port=8066, \
+        user='root', password='123456', db='psmc', connect_timeout=10)
     await insert(pool, sql, queue)
     await destory_pool(pool)
 
-def insert_thread(queue):
+def insert_loop(queue):
     '''' thread insert '''
     insert_loop = asyncio.get_event_loop()
     insert_loop.run_until_complete(insert_task(insert_loop, queue))
     insert_loop.close()
 
-def select_thread(queue):
+def select_loop(queue):
     '''' thread select '''
     select_loop = asyncio.get_event_loop()
     select_loop.run_until_complete(select_task(select_loop, queue))
@@ -141,8 +157,8 @@ def select_thread(queue):
 if __name__ == '__main__':
     Q = Queue(10)
 
-    preader = Process(target=select_thread, args=(Q,))
-    pwriter = Process(target=insert_thread, args=(Q,))
+    preader = Process(target=select_loop, args=(Q,))
+    pwriter = Process(target=insert_loop, args=(Q,))
     preader.start()
     pwriter.start()
     pwriter.join()
