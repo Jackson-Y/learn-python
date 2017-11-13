@@ -241,17 +241,10 @@ def check_handle(queue1, queue2):
         queue2.put(values_dict)
 
 async def writer(loop, queue):
-    engine = await create_engine(user=user,
-                                 host=host,
-                                 port=port,
-                                 db=db,
-                                 password=password,
-                                 charset='utf8',
-                                 loop=loop,
-                                 autocommit=True
-                                 )
-    # engine = await create_engine("mysql://root:123456@192.168.103.53:8066/psmc?charset=utf8", loop=loop)
-
+    engine = await create_engine(user=user, host=host, port=port,
+                                 db=db, password=password,
+                                 charset='utf8', loop=loop,
+                                 autocommit=True)
     async with engine.acquire() as conn:
         while True:
             values_dict = queue.get()
@@ -262,7 +255,6 @@ async def writer(loop, queue):
                 await conn.execute(document_tb.insert(), values_dict)
             except pymysql.err.IntegrityError as e:
                 logging.debug("[Exception] ", values_dict)
-            # conn.commit()
     engine.close()
     await engine.wait_closed()
 

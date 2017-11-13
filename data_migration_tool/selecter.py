@@ -6,18 +6,18 @@ import asyncio
 import aiomysql
 import pika
 
-host = '192.168.103.51'
+host = '192.168.106.231'
 port = 3306
-user = 'LibSvr'
-password = 'P@$$W0rd'
-db = 'el'
+user = 'root'
+password = 'cnkidras'
+db = 'recomm'
 
 rabbitmq = 'localhost'
 
 batch = 10 # 测试、调试使用。实际生产环境设置为None.
 batch_size = 100
 
-SQL = "select * from el_user_litera_info;"
+SQL = "select * from el_user_litera_info where UserID in (select UserID from el_user_all_users where FirstLoginTime >'2017-09-02' and FirstLoginTime <'2017-09-03');"
 
 async def create_pool(loop, **kw):
     ''' create database connection pool '''
@@ -82,9 +82,9 @@ def writer_handle(local_queue):
     channel.queue_declare(queue='data_queue', durable=True)
     while True:
         message = local_queue.get()
-        print("message: %s" % message['LiteratureID'])
         if message is None:
             break
+        print("message: %s" % message['LiteratureID'])
         for key, value in message.items():
             if isinstance(value, datetime.datetime):
                 message[key] = value.strftime('%Y-%m-%d %H:%M:%S')
