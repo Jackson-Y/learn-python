@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import sys
 from multiprocessing import Process, Queue
 import asyncio
@@ -30,7 +31,9 @@ columns = {
     }
 }
 
-logging.basicConfig(filename='checker.log', level=logging.DEBUG)
+filename = 'inserter_' + str(os.getpid()) + '.log'
+logging.basicConfig(filename=filename)
+logger = logging.getLogger(__name__).setLevel(logging.DEBUG)
 
 class Column(object):
     def __init__(self, name, mtype=None, max_len=None):
@@ -54,7 +57,7 @@ class Column(object):
             elif isinstance(value, str):
                 self.value = value
             else:
-                logging.debug(" [checker] (%s)Type(string) error!", self.name)
+                logger.debug(" [inserter] ({}-{})Type(text) error!".format(self.name, value))
                 return False
 
         elif self.type == 'string':
@@ -62,13 +65,13 @@ class Column(object):
                 self.value = str(value)
             elif isinstance(value, str):
                 if len(value) > self.max_len:
-                    logging.debug(" [checker] value(%s) is too long!", self.name)
+                    logger.debug(" [inserter] ({}-{}) max-length({}), length is too long!".format(self.name, value, self.max_len))
                     return False
                 self.value = value
             elif isinstance(value, datetime.datetime):
                 self.value = value.strftime('%Y-%m-%d %H:%M:%S')
             else:
-                logging.debug(" [checker] (%s)Type(string) error!", self.name)
+                logger.debug(" [inserter] ({}-{})Type(string) error!".format(self.name, value))
                 return False
 
         elif self.type == 'integer':
@@ -76,14 +79,14 @@ class Column(object):
                 self.value = value
             elif isinstance(value, str):
                 if len(value) > self.max_len:
-                    logging.debug(" [checker] value(%s) is too long!", self.name)
+                    logger.debug(" [inserter] ({}-{}) max-length({}), length is too long!".format(self.name, value, self.max_len))
                     return False
                 if not value.isdigit():
-                    logging.debug(" [checker] (%s)Type(integer) error!", self.name)
+                    logger.debug(" [inserter] ({}-{})Type(integer) error!".format(self.name, value))
                     return False
                 self.value = int(value)
             else:
-                logging.debug(" [checker] (%s)Type(string) error!", self.name)
+                logger.debug(" [inserter] ({}-{})Type(integer) error!".format(self.name, value))
                 return False
 
         elif self.type == 'datetime':
@@ -92,16 +95,16 @@ class Column(object):
             elif isinstance(value, str):
                 # len('2015-04-19 12:20:00') = 20
                 if len(value) > 20:
-                    logging.debug(" [checker] value(%s) is too long!", self.name)
+                    logger.debug(" [inserter] ({}-{}) max-length({}), length is too long!".format(self.name, value, self.max_len))
                     return False
                 self.value = value
                 # self.value = datetime.datetime.strptime(value, '%Y-%m-%d %H:%M:%S')
             else:
-                logging.debug(" [checker] (%s)Type(string) error!", self.name)
+                logger.debug(" [inserter] ({}-{})Type(integer) error!".format(self.name, value))
                 return False
             return True
         else:
-            logging.debug(" [checker] (%s)Type(string) error!", self.name)
+            logger.debug(" [inserter] ({}-{})Type(integer) error!".format(self.name, value))
             return False
         return True
 
@@ -221,7 +224,7 @@ def check_handle(queue1, queue2):
         data = queue1.get()
         if data is None:
             break
-        print(data['LiteratureID'])
+        print('ID: {}'.format(data['LiteratureID']), end=' ...')
 
         values_dict = {}
         for key in column_dict.keys():
@@ -239,6 +242,7 @@ def check_handle(queue1, queue2):
 
         # print(str(values_dict))
         queue2.put(values_dict)
+        print("Checker completed.")
 
 async def writer(loop, queue):
     engine = await create_engine(user=user, host=host, port=port,
@@ -254,7 +258,7 @@ async def writer(loop, queue):
             try:
                 await conn.execute(document_tb.insert(), values_dict)
             except pymysql.err.IntegrityError as e:
-                logging.debug("[Exception] ", values_dict)
+                logger.debug("[inserter] ", values_dict)
     engine.close()
     await engine.wait_closed()
 

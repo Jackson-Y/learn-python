@@ -20,8 +20,10 @@ rabbitmq = 'localhost'
 SQL1 = "SELECT * FROM `el_user_litera_reader_info` WHERE LiteratureID='%s';"
 SQL2 = "SELECT * FROM `el_user_adjunct_info` WHERE LiteratureGuid='%s';"
 
-filename = str(os.getpid()) + '_updater.log'
-logging.basicConfig(filename=filename, level=logging.DEBUG)
+filename = 'updater_' + str(os.getpid()) + '.log'
+logging.basicConfig(filename=filename)
+logger = logging.getLogger(__name__).setLevel(logging.DEBUG)
+
 
 async def create_pool(loop, **kw):
     ''' create database connection pool '''
@@ -53,6 +55,7 @@ async def updater(pool, queue1, queue2):
                 data = queue1.get()
                 if data is None:
                     break
+                print('ID: {}'.format(data['LiteratureID']), end=' ...')
                 sql1 = SQL1 % data['LiteratureID']
                 sql2 = SQL2 % data['LiteratureID']
                 # print(sql1)
@@ -64,7 +67,7 @@ async def updater(pool, queue1, queue2):
                         break
                     count += 1
                     if count > 1:
-                        logging.debug(" [updater] Table: \
+                        logger.debug(" [updater] Table: \
                             el_user_litera_reader_info, count > 1. ID='%s'", \
                             data['LiteratureID'])
                     else:
@@ -81,7 +84,7 @@ async def updater(pool, queue1, queue2):
                         break
                     count += 1
                     if count > 1:
-                        logging.debug(" [updater] Table: \
+                        logger.debug(" [updater] Table: \
                             el_user_adjunct_info, count > 1. ID='%s'", \
                             data['LiteratureID'])
                     else:
@@ -90,6 +93,7 @@ async def updater(pool, queue1, queue2):
                             key = 'adjunct_' + key
                             data[key] = value
                 queue2.put(data)
+                print('Update Completed.')
 
 async def update_task(select_loop, queue1, queue2):
     pool = await create_pool(select_loop, host=host, port=port, \
@@ -108,9 +112,9 @@ def write_handle(local_queue):
     channel.queue_declare(queue='update_data_queue', durable=True)
     while True:
         message = local_queue.get()
-        print("message: %s" % message['LiteratureID'])
         if message is None:
             break
+        # print("message: %s" % message['LiteratureID'])
         for key, value in message.items():
             if isinstance(value, datetime.datetime):
                 message[key] = value.strftime('%Y-%m-%d %H:%M:%S')
