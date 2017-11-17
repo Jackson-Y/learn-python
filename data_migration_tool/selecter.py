@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
+import os
 import json
 import datetime
 from multiprocessing import Process, Queue
 import asyncio
 import aiomysql
 import pika
+import logging
 
 host = '192.168.106.231'
 port = 3306
@@ -16,6 +18,12 @@ rabbitmq = 'localhost'
 
 batch = 10 # 测试、调试使用。实际生产环境设置为None.
 batch_size = 100
+
+
+filename = 'selecter_' + str(os.getpid()) + '.log'
+logging.basicConfig(filename=filename)
+logger = logging.getLogger(__name__).setLevel(logging.DEBUG)
+
 
 SQL = "select * from el_user_litera_info where UserID in (select UserID from el_user_all_users where FirstLoginTime >'2017-09-02' and FirstLoginTime <'2017-09-03');"
 

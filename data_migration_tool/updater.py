@@ -55,7 +55,7 @@ async def updater(pool, queue1, queue2):
                 data = queue1.get()
                 if data is None:
                     break
-                print('ID: {}'.format(data['LiteratureID']), end=' ...')
+                print('ID: {}'.format(data['LiteratureID']), end=' ... ')
                 sql1 = SQL1 % data['LiteratureID']
                 sql2 = SQL2 % data['LiteratureID']
                 # print(sql1)
