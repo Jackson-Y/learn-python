@@ -7,6 +7,7 @@ f = open('x.xml', mode='r', encoding='utf-8')
 txt = f.read()
 f.close()
 
+# 替换字符串中的非法字符
 txt = re.sub(u"[\x00-\x08\x0b-\x0c\x0e-\x1f]+", u"", txt)
 
 # tree = ET.parse('x.xml')
