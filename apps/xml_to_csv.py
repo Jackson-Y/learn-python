@@ -26,7 +26,7 @@ def data_parse(txt):
         size: text 字体大小
         r: text 当前字体大小相对于正文字体大小的比值
         ztext: textline 文本内容
-        zlabel: textline 人工标记的标签信息[1:文章标题, 2:一级标题, 3:二级标题, 4:作者, 5:关键词, 6:参考文献]
+        zlabel: textline 人工标记的标签信息[1:文章标题, 2:一级标题, 3:二级标题, 4:作者, 5:关键词, 6:参考文献, 7:摘要]
         page: 页码标准化到[0,1]区间, (pageid - min_pageid)/(max_pageid - min_pageid)
     """
     pageid = 0

@@ -16,7 +16,10 @@ def data_encode(df):
     # y = class_le.fit_transform(df['zlabel'].values)
     y = df['zlabel'].values
     # X = df[['dx', 'dy', 'font', 'h', 'page', 'size', 'w']].values
-    X = df[['dx', 'dy', 'h', 'page', 'r', 'size', 'w']].values
+    # X = df[['dx', 'dy', 'h', 'page', 'size', 'w']].values
+    # X = df[['dx', 'dy', 'h', 'page', 'r', 'size', 'w']].values
+    # X = df[['dx', 'dy', 'h', 'page', 'r', 'w']].values
+    X = df[['dx', 'dy', 'h', 'page', 'r', 'size']].values
     # X[:, 2] = class_le.fit_transform(X[:, 2])
     # features_dict = {}
     # features = class_le.classes_
