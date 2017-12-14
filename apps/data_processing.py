@@ -131,12 +131,13 @@ def data_parse(txt):
         page: 页码
         r_page: 相对页码，页码标准化到[0,1]区间, (pageid - min_pageid)/(max_pageid - min_pageid)
     """
+    data = {}
     pageid = 0
     lineno = 0
-    data = {}
-    size_counter = Counter()
-    reference_lineno = 0
     keyword_lineno = 0
+    reference_lineno = 0
+    reference_enable = True
+    size_counter = Counter()
     root = ET.fromstring(txt)
     # pages = root.findall('.//page[@id="1"]')
     pages = root.findall('.//page')
@@ -251,8 +252,9 @@ def data_parse(txt):
 
                 # 相对于References的位置
                 data[lineno]['r_line_ref'] = lineno
-                if text.lower().strip(' \r\n') in References:
+                if reference_enable and text.lower().strip(' \r\n') in References:
                     reference_lineno = lineno
+                    reference_enable = False
 
                 # 相对于Keywords的位置
                 data[lineno]['r_line_key'] = lineno

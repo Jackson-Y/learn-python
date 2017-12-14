@@ -121,5 +121,6 @@ def application(input_dir):
 
 if __name__ == '__main__':
     application('../sciencedirect/test/')
+    # application('G:/workspace/code/python/data/test_cnki/')
     # application('../cnki/test/')
     # application('./test/train')
