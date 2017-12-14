@@ -22,27 +22,10 @@ def training(x_train, y_train):
     # clf = MultinomialNB().fit(x_train, y_train)
     # clf = LogisticRegression().fit(x_train, y_train)
     # clf = MLPClassifier(solver='lbfgs', alpha=0.0001, hidden_layer_sizes=(10,), random_state=1).fit(x_train, y_train)
-    clf = GradientBoostingClassifier(n_estimators=100).fit(x_train, y_train)
+    clf = GradientBoostingClassifier(learning_rate=0.1, max_depth=8, n_estimators=70, random_state=10).fit(x_train, y_train)
     # clf = RandomForestClassifier(class_weight='balanced', random_state=7, max_depth=10).fit(x_train, y_train)
     # clf = DecisionTreeClassifier().fit(x_train, y_train)
     return clf
-
-
-# def xgboost_model(x_train, y_train):
-#     from sklearn.model_selection import KFold
-#     from sklean.metrics import confusion_matrix
-#     import xgboost as xgb
-#     import numpy as np
-#     rng = np.random.RandomState(31337)
-#     dtrain = xgb.DMatrix(x_train, label=y_train)
-#     kf = KFold(n_splits=2, shuffle=True, random_state=rng)
-#     xgb_model = xgb.XGBClassifier()
-#     for train_index, test_index in kf.split(x_train):
-#         xgb_model.fit(x_train[train_index], y_train[train_index])
-#         predictions = xgb_model.predict(x_train[test_index])
-#         actuals = y_train[test_index]
-#         print(confusion_matrix(actuals, predictions))
-
 
 def save_model(classifier, save_path="model/Title_keyword_author.model"):
     """ 保存模型 """
