@@ -1073,7 +1073,7 @@
 </textline>
 </textbox>
 <textbox id="14" bbox="40.422,271.756,103.744,281.703">
-<textline bbox="40.422,271.756,103.744,281.703">
+<textline bbox="40.422,271.756,103.744,281.703" label="2">
 <text font="JLIONK+GulliverBL" bbox="40.422,271.756,45.244,281.703" size="9.947">1</text>
 <text font="JLIONK+GulliverBL" bbox="45.244,271.756,47.364,281.703" size="9.947">.</text>
 <text font="JLIHAH+Times-Roman" bbox="47.363,273.430,47.363,273.430" size="0.000"> </text>
@@ -1094,7 +1094,7 @@
 </textline>
 </textbox>
 <textbox id="15" bbox="207.137,328.587,561.471,452.230">
-<textline bbox="207.137,443.357,561.471,452.230">
+<textline bbox="207.137,443.357,561.471,452.230" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,443.357,211.298,452.230" size="8.873">T</text>
 <text font="JLIGNH+GulliverRM" bbox="211.298,443.357,215.817,452.230" size="8.873">h</text>
 <text font="JLIGNH+GulliverRM" bbox="215.817,443.357,219.740,452.230" size="8.873">e</text>
@@ -1202,7 +1202,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,433.793,561.471,442.666">
+<textline bbox="207.137,433.793,561.471,442.666" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,433.793,209.368,442.666" size="8.873">l</text>
 <text font="JLIGNH+GulliverRM" bbox="209.368,433.793,213.234,442.666" size="8.873">a</text>
 <text font="JLIGNH+GulliverRM" bbox="213.234,433.793,216.290,442.666" size="8.873">r</text>
@@ -1304,7 +1304,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,424.229,561.471,433.102">
+<textline bbox="207.137,424.229,561.471,433.102" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,424.229,214.052,433.102" size="8.873">m</text>
 <text font="JLIGNH+GulliverRM" bbox="214.052,424.229,217.918,433.102" size="8.873">a</text>
 <text font="JLIGNH+GulliverRM" bbox="217.918,424.229,222.438,433.102" size="8.873">n</text>
@@ -1408,7 +1408,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,414.664,561.471,423.538">
+<textline bbox="207.137,414.664,561.471,423.538" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,414.665,211.599,423.538" size="8.873">p</text>
 <text font="JLIGNH+GulliverRM" bbox="211.599,414.665,214.655,423.538" size="8.873">r</text>
 <text font="JLIGNH+GulliverRM" bbox="214.655,414.665,216.893,423.538" size="8.873">i</text>
@@ -1511,7 +1511,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,405.100,561.471,413.974">
+<textline bbox="207.137,405.100,561.471,413.974" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,405.101,213.543,413.974" size="8.873">w</text>
 <text font="JLIGNH+GulliverRM" bbox="213.543,405.101,215.781,413.974" size="8.873">i</text>
 <text font="JLIGNH+GulliverRM" bbox="215.781,405.101,218.564,413.974" size="8.873">t</text>
@@ -1615,7 +1615,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,395.536,561.471,404.409">
+<textline bbox="207.137,395.536,561.471,404.409" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,395.536,210.193,404.409" size="8.873">r</text>
 <text font="JLIGNH+GulliverRM" bbox="210.193,395.536,214.117,404.409" size="8.873">e</text>
 <text font="JLIGNH+GulliverRM" bbox="214.117,395.536,218.485,404.409" size="8.873">q</text>
@@ -1725,7 +1725,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,385.972,561.471,394.845">
+<textline bbox="207.137,385.972,561.471,394.845" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,385.972,210.466,394.845" size="8.873">s</text>
 <text font="JLIGNH+GulliverRM" bbox="210.466,385.972,213.249,394.845" size="8.873">t</text>
 <text font="JLIGNH+GulliverRM" bbox="213.249,385.972,217.481,394.845" size="8.873">o</text>
@@ -1836,7 +1836,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,376.408,561.471,385.281">
+<textline bbox="207.137,376.408,561.471,385.281" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,376.408,211.370,385.281" size="8.873">o</text>
 <text font="JLIGNH+GulliverRM" bbox="211.370,376.408,213.851,385.281" size="8.873">f</text>
 <text font="JLIHAH+Times-Roman" bbox="213.851,377.914,213.851,377.914" size="0.000"> </text>
@@ -1945,7 +1945,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,366.844,561.471,375.717">
+<textline bbox="207.137,366.844,561.471,375.717" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,366.844,211.599,375.717" size="8.873">p</text>
 <text font="JLIGNH+GulliverRM" bbox="211.599,366.844,214.655,375.717" size="8.873">r</text>
 <text font="JLIGNH+GulliverRM" bbox="214.655,366.844,218.887,375.717" size="8.873">o</text>
@@ -2052,7 +2052,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,357.279,561.471,366.153">
+<textline bbox="207.137,357.279,561.471,366.153" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,357.280,211.370,366.153" size="8.873">o</text>
 <text font="JLIGNH+GulliverRM" bbox="211.370,357.280,213.851,366.153" size="8.873">f</text>
 <text font="JLIHAH+Times-Roman" bbox="213.851,358.786,213.851,358.786" size="0.000"> </text>
@@ -2156,7 +2156,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,347.715,561.471,356.589">
+<textline bbox="207.137,347.715,561.471,356.589" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,347.716,214.102,356.589" size="8.873">M</text>
 <text font="JLIGNH+GulliverRM" bbox="214.102,347.716,217.969,356.589" size="8.873">a</text>
 <text font="JLIGNH+GulliverRM" bbox="217.969,347.716,221.541,356.589" size="8.873">c</text>
@@ -2265,7 +2265,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,338.151,561.471,347.024">
+<textline bbox="207.137,338.151,561.471,347.024" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,338.151,211.061,347.024" size="8.873">e</text>
 <text font="JLIGNH+GulliverRM" bbox="211.061,338.151,215.200,347.024" size="8.873">x</text>
 <text font="JLIGNH+GulliverRM" bbox="215.200,338.151,219.661,347.024" size="8.873">p</text>
@@ -2374,7 +2374,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="207.137,328.587,259.085,337.460">
+<textline bbox="207.137,328.587,259.085,337.460" label="7">
 <text font="JLIGNH+GulliverRM" bbox="207.137,328.587,211.061,337.460" size="8.873">S</text>
 <text font="JLIGNH+GulliverRM" bbox="211.061,328.587,215.982,337.460" size="8.873">A</text>
 <text font="JLIGNH+GulliverRM" bbox="215.982,328.587,221.232,337.460" size="8.873">G</text>
@@ -6517,7 +6517,7 @@
 </textline>
 </textbox>
 <textbox id="3" bbox="51.232,466.135,266.351,476.082">
-<textline bbox="51.232,466.135,266.351,476.082">
+<textline bbox="51.232,466.135,266.351,476.082" label="2">
 <text font="JLIONK+GulliverBL" bbox="51.232,466.135,56.054,476.082" size="9.947">2</text>
 <text font="JLIONK+GulliverBL" bbox="56.054,466.135,58.174,476.082" size="9.947">.</text>
 <text font="JLIHAH+Times-Roman" bbox="58.173,467.809,58.173,467.809" size="0.000"> </text>
@@ -6576,7 +6576,7 @@
 </textline>
 </textbox>
 <textbox id="4" bbox="51.232,445.214,169.711,454.810">
-<textline bbox="51.232,445.214,169.711,454.810">
+<textline bbox="51.232,445.214,169.711,454.810" label="3">
 <text font="JLIIMA+GulliverIT" bbox="51.232,445.214,55.814,454.810" size="9.596">2</text>
 <text font="JLIIMA+GulliverIT" bbox="55.814,445.214,57.711,454.810" size="9.596">.</text>
 <text font="JLIIMA+GulliverIT" bbox="57.711,445.214,62.294,454.810" size="9.596">1</text>
@@ -11465,7 +11465,7 @@
 </textline>
 </textbox>
 <textbox id="9" bbox="320.721,224.384,549.421,244.441">
-<textline bbox="320.721,234.845,549.421,244.441">
+<textline bbox="320.721,234.845,549.421,244.441" label="3">
 <text font="JLIIMA+GulliverIT" bbox="320.721,234.845,325.304,244.441" size="9.596">2</text>
 <text font="JLIIMA+GulliverIT" bbox="325.304,234.845,327.201,244.441" size="9.596">.</text>
 <text font="JLIIMA+GulliverIT" bbox="327.201,234.845,331.784,244.441" size="9.596">2</text>
@@ -11530,7 +11530,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.722,224.384,505.755,233.980">
+<textline bbox="320.722,224.384,505.755,233.980" label="3">
 <text font="JLIIMA+GulliverIT" bbox="320.722,224.384,323.208,233.980" size="9.596">f</text>
 <text font="JLIIMA+GulliverIT" bbox="323.208,224.384,327.624,233.980" size="9.596">o</text>
 <text font="JLIIMA+GulliverIT" bbox="327.624,224.384,330.915,233.980" size="9.596">r</text>
@@ -15003,7 +15003,7 @@
 </textline>
 </textbox>
 <textbox id="28" bbox="309.911,433.282,355.180,443.229">
-<textline bbox="309.911,433.282,355.180,443.229">
+<textline bbox="309.911,433.282,355.180,443.229" label="2">
 <text font="JLIONK+GulliverBL" bbox="309.911,433.282,314.733,443.229" size="9.947">3</text>
 <text font="JLIONK+GulliverBL" bbox="314.733,433.282,316.853,443.229" size="9.947">.</text>
 <text font="JLIHAH+Times-Roman" bbox="316.853,434.955,316.853,434.956" size="0.000"> </text>
@@ -16825,7 +16825,7 @@
 </textline>
 </textbox>
 <textbox id="32" bbox="309.911,100.008,543.817,120.416">
-<textline bbox="309.911,110.469,543.817,120.416">
+<textline bbox="309.911,110.469,543.817,120.416" label="2">
 <text font="JLIONK+GulliverBL" bbox="309.911,110.469,314.733,120.416" size="9.947">4</text>
 <text font="JLIONK+GulliverBL" bbox="314.733,110.469,316.853,120.416" size="9.947">.</text>
 <text font="JLIHAH+Times-Roman" bbox="316.853,112.142,316.853,112.143" size="0.000"> </text>
@@ -16884,7 +16884,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="309.912,100.008,412.148,109.955">
+<textline bbox="309.912,100.008,412.148,109.955" label="2">
 <text font="JLIONK+GulliverBL" bbox="309.912,100.008,313.211,109.955" size="9.947">t</text>
 <text font="JLIONK+GulliverBL" bbox="313.211,100.008,318.224,109.955" size="9.947">o</text>
 <text font="JLIHAH+Times-Roman" bbox="318.224,101.682,318.224,101.682" size="0.000"> </text>
@@ -18512,7 +18512,7 @@
 </textline>
 </textbox>
 <textbox id="3" bbox="51.232,538.863,126.533,548.809">
-<textline bbox="51.232,538.863,126.533,548.809">
+<textline bbox="51.232,538.863,126.533,548.809" label="2">
 <text font="JLIONK+GulliverBL" bbox="51.232,538.863,56.803,548.809" size="9.947">A</text>
 <text font="JLIONK+GulliverBL" bbox="56.803,538.863,60.939,548.809" size="9.947">c</text>
 <text font="JLIONK+GulliverBL" bbox="60.939,538.863,66.136,548.809" size="9.947">k</text>
@@ -18658,7 +18658,7 @@
 </textline>
 </textbox>
 <textbox id="5" bbox="320.721,738.116,364.373,748.062">
-<textline bbox="320.721,738.116,364.373,748.062">
+<textline bbox="320.721,738.116,364.373,748.062" label="2">
 <text font="JLIONK+GulliverBL" bbox="320.721,738.116,326.205,748.062" size="9.947">R</text>
 <text font="JLIONK+GulliverBL" bbox="326.205,738.116,330.692,748.062" size="9.947">e</text>
 <text font="JLIONK+GulliverBL" bbox="330.692,738.116,333.824,748.062" size="9.947">f</text>
@@ -18674,7 +18674,7 @@
 </textline>
 </textbox>
 <textbox id="6" bbox="320.086,560.716,571.883,728.006">
-<textline bbox="320.087,720.119,566.382,728.006">
+<textline bbox="320.087,720.119,566.382,728.006" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.087,720.119,322.478,728.006" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.478,720.119,326.316,728.006" size="7.887">1</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,720.119,328.707,728.006" size="7.887">]</text>
@@ -18752,7 +18752,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,712.149,534.050,720.036">
+<textline bbox="331.995,712.149,534.050,720.036" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,712.149,335.986,720.036" size="7.887">C</text>
 <text font="JLIGNH+GulliverRM" bbox="335.986,712.149,339.729,720.036" size="7.887">E</text>
 <text font="JLIGNH+GulliverRM" bbox="339.729,712.149,343.829,720.036" size="7.887">R</text>
@@ -18818,7 +18818,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,704.179,475.367,712.066">
+<textline bbox="331.994,704.179,475.367,712.066" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,704.179,334.047,712.066" size="7.887">I</text>
 <text font="JLIGNH+GulliverRM" bbox="334.047,704.179,337.535,712.066" size="7.887">S</text>
 <text font="JLIGNH+GulliverRM" bbox="337.535,704.179,341.539,712.066" size="7.887">B</text>
@@ -18866,7 +18866,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.086,696.209,571.642,704.096">
+<textline bbox="320.086,696.209,571.642,704.096" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.086,696.209,322.477,704.096" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.477,696.209,326.316,704.096" size="7.887">2</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,696.209,328.707,704.096" size="7.887">]</text>
@@ -18954,7 +18954,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,688.238,472.645,696.126">
+<textline bbox="331.995,688.238,472.645,696.126" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,688.238,336.605,696.126" size="7.887">&amp;</text>
 <text font="JLIHAH+Times-Roman" bbox="336.605,689.577,336.605,689.578" size="0.000"> </text>
 <text font="JLIGNH+GulliverRM" bbox="338.262,688.239,341.699,696.126" size="7.887">a</text>
@@ -19006,7 +19006,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.086,680.268,561.549,688.156">
+<textline bbox="320.086,680.268,561.549,688.156" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.086,680.268,322.477,688.156" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.477,680.268,326.316,688.156" size="7.887">3</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,680.268,328.707,688.156" size="7.887">]</text>
@@ -19087,7 +19087,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,672.298,482.005,680.185">
+<textline bbox="331.994,672.298,482.005,680.185" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,672.298,335.367,680.185" size="7.887">F</text>
 <text font="JLIGNH+GulliverRM" bbox="335.367,672.298,339.352,680.185" size="7.887">u</text>
 <text font="JLIGNH+GulliverRM" bbox="339.352,672.298,342.311,680.185" size="7.887">s</text>
@@ -19140,7 +19140,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.087,664.328,569.964,672.215">
+<textline bbox="320.087,664.328,569.964,672.215" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.087,664.328,322.478,672.215" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.478,664.328,326.316,672.215" size="7.887">4</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,664.328,328.707,672.215" size="7.887">]</text>
@@ -19227,7 +19227,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,656.358,455.291,664.245">
+<textline bbox="331.994,656.358,455.291,664.245" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,656.358,335.482,664.245" size="7.887">e</text>
 <text font="JLIGNH+GulliverRM" bbox="335.482,656.358,339.161,664.245" size="7.887">x</text>
 <text font="JLIGNH+GulliverRM" bbox="339.161,656.358,342.649,664.245" size="7.887">e</text>
@@ -19271,7 +19271,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.086,648.388,398.421,656.275">
+<textline bbox="320.086,648.388,398.421,656.275" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.086,648.388,322.477,656.275" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.477,648.388,326.316,656.275" size="7.887">5</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,648.388,328.707,656.275" size="7.887">]</text>
@@ -19301,7 +19301,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.087,640.418,570.480,648.305">
+<textline bbox="320.087,640.418,570.480,648.305" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.087,640.418,322.478,648.305" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.478,640.418,326.316,648.305" size="7.887">6</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,640.418,328.707,648.305" size="7.887">]</text>
@@ -19393,7 +19393,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,632.447,545.896,640.335">
+<textline bbox="331.995,632.447,545.896,640.335" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,632.448,333.984,640.335" size="7.887">i</text>
 <text font="JLIGNH+GulliverRM" bbox="333.984,632.448,338.001,640.335" size="7.887">n</text>
 <text font="JLIGNH+GulliverRM" bbox="338.001,632.448,340.723,640.335" size="7.887">-</text>
@@ -19465,7 +19465,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,624.477,559.342,632.365">
+<textline bbox="331.994,624.477,559.342,632.365" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,624.477,335.482,632.364" size="7.887">S</text>
 <text font="JLIGNH+GulliverRM" bbox="335.482,624.477,339.116,632.364" size="7.887">y</text>
 <text font="JLIGNH+GulliverRM" bbox="339.116,624.477,345.263,632.364" size="7.887">m</text>
@@ -19536,7 +19536,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,616.507,504.428,624.395">
+<textline bbox="331.995,616.507,504.428,624.395" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,616.507,336.745,624.394" size="7.887">U</text>
 <text font="JLIGNH+GulliverRM" bbox="336.745,616.507,340.232,624.394" size="7.887">S</text>
 <text font="JLIGNH+GulliverRM" bbox="340.232,616.507,343.975,624.394" size="7.887">E</text>
@@ -19595,7 +19595,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.087,608.537,425.557,616.424">
+<textline bbox="320.087,608.537,425.557,616.424" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.087,608.537,322.478,616.424" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.478,608.537,326.316,616.424" size="7.887">7</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,608.537,328.707,616.424" size="7.887">]</text>
@@ -19634,7 +19634,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.086,600.567,569.027,608.454">
+<textline bbox="320.086,600.567,569.027,608.454" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.086,600.567,322.477,608.454" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.477,600.567,326.316,608.454" size="7.887">8</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,600.567,328.707,608.454" size="7.887">]</text>
@@ -19722,7 +19722,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,592.597,571.883,600.484">
+<textline bbox="331.995,592.597,571.883,600.484" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,592.597,335.737,600.484" size="7.887">P</text>
 <text font="JLIGNH+GulliverRM" bbox="335.737,592.597,338.454,600.484" size="7.887">r</text>
 <text font="JLIGNH+GulliverRM" bbox="338.454,592.597,340.443,600.484" size="7.887">i</text>
@@ -19801,7 +19801,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,584.627,510.294,592.514">
+<textline bbox="331.994,584.627,510.294,592.514" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,584.627,334.468,592.514" size="7.887">t</text>
 <text font="JLIGNH+GulliverRM" bbox="334.468,584.627,338.485,592.514" size="7.887">h</text>
 <text font="JLIGNH+GulliverRM" bbox="338.485,584.627,341.973,592.514" size="7.887">e</text>
@@ -19862,7 +19862,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="320.086,576.657,571.852,584.544">
+<textline bbox="320.086,576.657,571.852,584.544" label="6">
 <text font="JLIGNH+GulliverRM" bbox="320.086,576.657,322.478,584.544" size="7.887">[</text>
 <text font="JLIGNH+GulliverRM" bbox="322.478,576.657,326.316,584.544" size="7.887">9</text>
 <text font="JLIGNH+GulliverRM" bbox="326.316,576.657,328.707,584.544" size="7.887">]</text>
@@ -19953,7 +19953,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.994,568.687,559.195,576.574">
+<textline bbox="331.994,568.687,559.195,576.574" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.994,568.687,335.737,576.574" size="7.887">E</text>
 <text font="JLIGNH+GulliverRM" bbox="335.737,568.687,337.726,576.574" size="7.887">i</text>
 <text font="JLIGNH+GulliverRM" bbox="337.726,568.687,341.323,576.574" size="7.887">g</text>
@@ -20031,7 +20031,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="331.995,560.716,360.419,568.604">
+<textline bbox="331.995,560.716,360.419,568.604" label="6">
 <text font="JLIGNH+GulliverRM" bbox="331.995,560.716,335.833,568.604" size="7.887">2</text>
 <text font="JLIGNH+GulliverRM" bbox="335.833,560.716,339.671,568.604" size="7.887">6</text>
 <text font="JLIGNH+GulliverRM" bbox="339.671,560.716,343.510,568.604" size="7.887">3</text>

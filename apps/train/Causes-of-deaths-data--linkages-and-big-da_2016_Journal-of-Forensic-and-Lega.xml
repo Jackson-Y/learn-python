@@ -673,7 +673,7 @@
 </textline>
 </textbox>
 <textbox id="11" bbox="206.929,332.067,562.632,522.584">
-<textline bbox="206.929,513.768,562.492,522.584">
+<textline bbox="206.929,513.768,562.492,522.584" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.929,513.768,211.047,522.584" size="8.816">T</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.047,513.768,215.553,522.584" size="8.816">h</text>
 <text font="DECNFI+AdvOT863180fb" bbox="215.553,513.768,219.432,522.584" size="8.816">e</text>
@@ -778,7 +778,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,504.244,562.576,513.060">
+<textline bbox="206.930,504.244,562.576,513.060" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,504.244,213.763,513.060" size="8.816">m</text>
 <text font="DECNFI+AdvOT863180fb" bbox="213.763,504.244,217.956,513.060" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="217.956,504.244,222.461,513.060" size="8.816">n</text>
@@ -881,7 +881,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,494.663,562.493,503.478">
+<textline bbox="206.930,494.663,562.493,503.478" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,494.663,213.763,503.478" size="8.816">m</text>
 <text font="DECNFI+AdvOT863180fb" bbox="213.763,494.663,217.642,503.478" size="8.816">e</text>
 <text font="DECNFI+AdvOT863180fb" bbox="217.642,494.663,222.066,503.478" size="8.816">d</text>
@@ -978,7 +978,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,485.082,562.531,493.897">
+<textline bbox="206.930,485.082,562.531,493.897" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,485.082,209.645,493.897" size="8.816">(</text>
 <text font="DECNFI+AdvOT863180fb" bbox="209.645,485.082,217.411,493.897" size="8.816">W</text>
 <text font="DECNFI+AdvOT863180fb" bbox="217.411,485.082,222.924,493.897" size="8.816">H</text>
@@ -1078,7 +1078,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.931,475.557,562.576,484.373">
+<textline bbox="206.931,475.557,562.576,484.373" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.931,475.557,210.422,484.373" size="8.816">c</text>
 <text font="DECNFI+AdvOT863180fb" bbox="210.422,475.557,214.614,484.373" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.614,475.557,219.120,484.373" size="8.816">n</text>
@@ -1182,7 +1182,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.931,465.976,562.564,474.792">
+<textline bbox="206.931,465.976,562.564,474.792" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.931,465.976,211.124,474.792" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.124,465.976,213.526,474.792" size="8.816">f</text>
 <text font="DECNFN+AdvOT863180fb+fb" bbox="213.565,467.490,218.145,473.092" size="5.602">ﬁ</text>
@@ -1287,7 +1287,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.932,456.395,562.579,465.211">
+<textline bbox="206.932,456.395,562.579,465.211" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.932,456.395,209.647,465.211" size="8.816">t</text>
 <text font="DECNFI+AdvOT863180fb" bbox="209.647,456.395,211.818,465.211" size="8.816">i</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.818,456.395,216.011,465.211" size="8.816">o</text>
@@ -1397,7 +1397,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.932,446.814,562.516,455.630">
+<textline bbox="206.932,446.814,562.516,455.630" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.932,446.814,210.737,455.630" size="8.816">a</text>
 <text> </text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.643,446.814,218.678,455.630" size="8.816">g</text>
@@ -1496,7 +1496,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.932,437.289,562.532,447.455">
+<textline bbox="206.932,437.289,562.532,447.455" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.932,437.289,211.356,446.105" size="8.816">d</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.356,437.289,215.235,446.105" size="8.816">e</text>
 <text font="DECNFI+AdvOT863180fb" bbox="215.235,437.289,219.271,446.105" size="8.816">v</text>
@@ -1600,7 +1600,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,427.708,562.523,436.524">
+<textline bbox="206.930,427.708,562.523,436.524" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,427.708,209.958,436.524" size="8.816">r</text>
 <text font="DECNFI+AdvOT863180fb" bbox="209.958,427.708,213.838,436.524" size="8.816">e</text>
 <text font="DECNFI+AdvOT863180fb" bbox="213.838,427.708,217.098,436.524" size="8.816">s</text>
@@ -1708,7 +1708,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,418.127,562.529,426.943">
+<textline bbox="206.930,418.127,562.529,426.943" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,418.127,214.695,426.943" size="8.816">W</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.695,418.127,219.201,426.943" size="8.816">h</text>
 <text font="DECNFI+AdvOT863180fb" bbox="219.201,418.127,221.372,426.943" size="8.816">i</text>
@@ -1809,7 +1809,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,408.603,562.632,417.419">
+<textline bbox="206.930,408.603,562.632,417.419" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,408.603,211.353,417.419" size="8.816">d</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.353,408.603,213.524,417.419" size="8.816">i</text>
 <text font="DECNFI+AdvOT863180fb" bbox="213.524,408.603,216.784,417.419" size="8.816">s</text>
@@ -1917,7 +1917,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,399.022,562.620,407.837">
+<textline bbox="206.930,399.022,562.620,407.837" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,399.022,209.645,407.837" size="8.816">t</text>
 <text font="DECNFI+AdvOT863180fb" bbox="209.645,399.022,214.151,407.837" size="8.816">h</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.151,399.022,218.030,407.837" size="8.816">e</text>
@@ -2019,7 +2019,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,389.441,562.612,398.256">
+<textline bbox="206.930,389.441,562.612,398.256" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,389.441,211.353,398.256" size="8.816">p</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.353,389.441,215.546,398.256" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="215.546,389.441,218.261,398.256" size="8.816">t</text>
@@ -2126,7 +2126,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,379.916,562.617,388.732">
+<textline bbox="206.930,379.916,562.617,388.732" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,379.916,211.353,388.732" size="8.816">d</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.353,379.916,215.777,388.732" size="8.816">u</text>
 <text font="DECNFI+AdvOT863180fb" bbox="215.777,379.916,219.268,388.732" size="8.816">c</text>
@@ -2239,7 +2239,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,370.335,562.534,379.151">
+<textline bbox="206.930,370.335,562.534,379.151" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,370.335,211.122,379.151" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.122,370.335,213.838,379.151" size="8.816">t</text>
 <text font="DECNFI+AdvOT863180fb" bbox="213.838,370.335,218.343,379.151" size="8.816">h</text>
@@ -2341,7 +2341,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,360.754,562.574,369.570">
+<textline bbox="206.930,360.754,562.574,369.570" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,360.754,210.422,369.570" size="8.816">c</text>
 <text font="DECNFI+AdvOT863180fb" bbox="210.422,360.754,214.614,369.570" size="8.816">o</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.614,360.754,219.038,369.570" size="8.816">u</text>
@@ -2449,7 +2449,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.930,351.173,562.540,359.989">
+<textline bbox="206.930,351.173,562.540,359.989" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.930,351.173,210.422,359.989" size="8.816">c</text>
 <text font="DECNFI+AdvOT863180fb" bbox="210.422,351.173,214.301,359.989" size="8.816">e</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.301,351.173,218.807,359.989" size="8.816">n</text>
@@ -2558,7 +2558,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="206.931,341.648,468.627,350.464">
+<textline bbox="206.931,341.648,468.627,350.464" label="7">
 <text font="DECNFI+AdvOT863180fb" bbox="206.931,341.648,211.355,350.464" size="8.816">p</text>
 <text font="DECNFI+AdvOT863180fb" bbox="211.355,341.648,214.384,350.464" size="8.816">r</text>
 <text font="DECNFI+AdvOT863180fb" bbox="214.384,341.648,218.576,350.464" size="8.816">o</text>
@@ -2727,7 +2727,7 @@
 </textline>
 </textbox>
 <textbox id="12" bbox="42.520,272.939,104.641,282.814">
-<textline bbox="42.520,272.939,104.641,282.814">
+<textline bbox="42.520,272.939,104.641,282.814" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="42.520,272.939,47.261,282.814" size="9.875">1</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="46.828,272.939,48.900,282.814" size="9.875">.</text>
 <text> </text>
@@ -5372,7 +5372,7 @@
 </textline>
 </textbox>
 <textbox id="2" bbox="32.825,719.395,150.132,729.270">
-<textline bbox="32.825,719.395,150.132,729.270">
+<textline bbox="32.825,719.395,150.132,729.270" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="32.825,719.395,37.566,729.270" size="9.875">2</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="37.566,719.395,39.639,729.270" size="9.875">.</text>
 <text> </text>
@@ -11102,7 +11102,7 @@
 </textline>
 </textbox>
 <textbox id="5" bbox="301.833,468.359,541.923,488.666">
-<textline bbox="301.833,478.791,541.923,488.666">
+<textline bbox="301.833,478.791,541.923,488.666" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="301.833,478.791,306.574,488.666" size="9.875">3</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="306.574,478.791,308.646,488.666" size="9.875">.</text>
 <text> </text>
@@ -11162,7 +11162,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="301.833,468.359,340.467,478.234">
+<textline bbox="301.833,468.359,340.467,478.234" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="301.833,468.359,306.922,478.234" size="9.875">d</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="306.922,468.359,311.407,478.234" size="9.875">a</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="311.407,468.359,314.681,478.234" size="9.875">t</text>
@@ -13008,7 +13008,7 @@
 </textline>
 </textbox>
 <textbox id="7" bbox="301.833,144.076,438.272,153.951">
-<textline bbox="301.833,144.076,438.272,153.951">
+<textline bbox="301.833,144.076,438.272,153.951" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="301.833,144.076,306.574,153.951" size="9.875">4</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="306.574,144.076,308.646,153.951" size="9.875">.</text>
 <text> </text>
@@ -15273,7 +15273,7 @@
 </textline>
 </textbox>
 <textbox id="12" bbox="42.520,206.836,114.049,216.711">
-<textline bbox="42.520,206.836,114.049,216.711">
+<textline bbox="42.520,206.836,114.049,216.711" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="42.520,206.836,47.261,216.711" size="9.875">5</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="47.261,206.836,49.333,216.711" size="9.875">.</text>
 <text> </text>
@@ -16243,7 +16243,7 @@
 </textline>
 </textbox>
 <textbox id="14" bbox="311.528,357.526,421.679,367.402">
-<textline bbox="311.528,357.526,421.679,367.402">
+<textline bbox="311.528,357.526,421.679,367.402" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="311.528,357.526,316.269,367.402" size="9.875">6</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="316.269,357.526,318.341,367.402" size="9.875">.</text>
 <text> </text>
@@ -17293,7 +17293,7 @@
 </textline>
 </textbox>
 <textbox id="16" bbox="311.527,154.508,366.620,164.384">
-<textline bbox="311.527,154.508,366.620,164.384">
+<textline bbox="311.527,154.508,366.620,164.384" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="311.527,154.508,316.268,164.384" size="9.875">7</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="315.552,154.508,317.625,164.384" size="9.875">.</text>
 <text> </text>
@@ -18893,7 +18893,7 @@
 </textline>
 </textbox>
 <textbox id="3" bbox="32.825,614.798,166.600,624.673">
-<textline bbox="32.825,614.798,166.600,624.673">
+<textline bbox="32.825,614.798,166.600,624.673" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="32.825,614.798,38.346,624.673" size="9.875">A</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="38.346,614.798,43.435,624.673" size="9.875">p</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="43.435,614.798,48.524,624.673" size="9.875">p</text>
@@ -19042,7 +19042,7 @@
 </textline>
 </textbox>
 <textbox id="5" bbox="32.825,562.528,75.482,572.403">
-<textline bbox="32.825,562.528,75.482,572.403">
+<textline bbox="32.825,562.528,75.482,572.403" label="2">
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="32.825,562.528,38.263,572.403" size="9.875">R</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="38.098,562.528,42.499,572.403" size="9.875">e</text>
 <text font="DECNGA+AdvOTb83ee1dd.B" bbox="42.499,562.528,45.607,572.403" size="9.875">f</text>

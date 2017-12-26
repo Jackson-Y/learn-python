@@ -745,7 +745,7 @@
 </textline>
 </textbox>
 <textbox id="11" bbox="201.997,465.104,556.330,539.407">
-<textline bbox="201.997,512.924,556.327,539.407">
+<textline bbox="201.997,512.924,556.327,539.407" label="7">
 <text font="LZXJZW+CharisSIL" bbox="201.997,512.924,204.365,539.407" size="26.483">I</text>
 <text font="LZXJZW+CharisSIL" bbox="204.365,512.924,208.431,539.407" size="26.483">n</text>
 <text> </text>
@@ -863,7 +863,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="201.997,493.796,556.329,520.279">
+<textline bbox="201.997,493.796,556.329,520.279" label="7">
 <text font="LZXJZW+CharisSIL" bbox="201.997,493.796,204.434,520.279" size="26.483">t</text>
 <text font="LZXJZW+CharisSIL" bbox="204.434,493.796,208.553,520.279" size="26.483">h</text>
 <text font="LZXJZW+CharisSIL" bbox="208.553,493.796,212.069,520.279" size="26.483">e</text>
@@ -982,7 +982,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="201.997,503.360,556.330,529.843">
+<textline bbox="201.997,503.360,556.330,529.843" label="7">
 <text font="LZXJZW+CharisSIL" bbox="201.997,503.360,206.179,529.843" size="26.483">E</text>
 <text font="LZXJZW+CharisSIL" bbox="206.179,503.360,210.225,529.843" size="26.483">d</text>
 <text font="LZXJZW+CharisSIL" bbox="210.225,503.360,212.399,529.843" size="26.483">i</text>
@@ -1099,7 +1099,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="201.997,484.232,556.327,510.715">
+<textline bbox="201.997,484.232,556.327,510.715" label="7">
 <text font="LZXJZW+CharisSIL" bbox="201.997,484.232,205.647,510.715" size="26.483">a</text>
 <text font="LZXJZW+CharisSIL" bbox="205.647,484.232,208.452,510.715" size="26.483">r</text>
 <text font="LZXJZW+CharisSIL" bbox="208.452,484.232,211.968,510.715" size="26.483">e</text>
@@ -1212,7 +1212,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="201.997,474.668,250.828,501.151">
+<textline bbox="201.997,474.668,250.828,501.151" label="7">
 <text font="LZXJZW+CharisSIL" bbox="201.997,474.668,206.043,501.151" size="26.483">d</text>
 <text font="LZXJZW+CharisSIL" bbox="206.043,474.668,209.692,501.151" size="26.483">a</text>
 <text font="LZXJZW+CharisSIL" bbox="209.692,474.668,212.130,501.151" size="26.483">t</text>
@@ -1271,7 +1271,7 @@
 </textline>
 </textbox>
 <textbox id="12" bbox="37.587,123.968,288.675,445.898">
-<textline bbox="37.587,416.472,96.787,445.898">
+<textline bbox="37.587,416.472,96.787,445.898" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="37.587,416.472,42.265,445.898" size="29.426">1</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="42.265,416.472,44.798,445.898" size="29.426">.</text>
 <text> </text>
@@ -3449,7 +3449,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="306.604,374.175,479.378,403.601">
+<textline bbox="306.604,374.175,479.378,403.601" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="306.604,374.175,311.282,403.601" size="29.426">2</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="311.282,374.175,313.815,403.601" size="29.426">.</text>
 <text> </text>
@@ -6161,7 +6161,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="37.587,619.703,208.069,649.129">
+<textline bbox="37.587,619.703,208.069,649.129" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="37.587,619.703,42.265,649.129" size="29.426">3</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="42.265,619.703,44.798,649.129" size="29.426">.</text>
 <text> </text>
@@ -10083,7 +10083,7 @@
 </textline>
 </textbox>
 <textbox id="4" bbox="306.604,49.567,557.692,760.084">
-<textline bbox="306.604,730.658,454.351,760.084">
+<textline bbox="306.604,730.658,454.351,760.084" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="306.604,730.658,311.282,760.084" size="29.426">4</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="311.282,730.658,313.815,760.084" size="29.426">.</text>
 <text> </text>
@@ -12859,7 +12859,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="306.604,280.164,378.717,309.590">
+<textline bbox="306.604,280.164,378.717,309.590" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="306.604,280.164,311.282,309.590" size="29.426">5</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="311.282,280.164,313.815,309.590" size="29.426">.</text>
 <text> </text>
@@ -13700,7 +13700,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="306.604,122.901,381.721,152.327">
+<textline bbox="306.604,122.901,381.721,152.327" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="306.604,122.901,311.282,152.327" size="29.426">6</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="311.282,122.901,313.815,152.327" size="29.426">.</text>
 <text> </text>
@@ -15295,7 +15295,7 @@
 <text>
 </text>
 </textline>
-<textline bbox="37.587,565.380,78.796,594.806">
+<textline bbox="37.587,565.380,78.796,594.806" label="2">
 <text font="IKELNO+CharisSIL-Bold" bbox="37.587,565.380,43.199,594.806" size="29.426">R</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="43.199,565.380,47.413,594.806" size="29.426">e</text>
 <text font="IKELNO+CharisSIL-Bold" bbox="47.413,565.380,50.181,594.806" size="29.426">f</text>

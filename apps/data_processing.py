@@ -12,53 +12,66 @@ Features = {
     'box_xt': 1,
     'box_y': 2,
     'box_yt': 3,
-    'font': 4,
-    'indent': 5,
-    'line_h': 6,
-    'line_space_bottom': 7,
-    'line_space_top': 8,
-    'line_w': 9,
-    'line_x': 10,
-    'line_xt': 11,
-    'line_y': 12,
-    'line_yt': 13,
-    'page': 14,
-    'r_line_key': 15,
-    'r_line_ref': 16,
-    'r_line_x': 17,
-    'r_line_xt': 18,
-    'r_line_y': 19,
-    'r_line_yt': 20,
-    'r_page': 21,
-    'r_size': 22,
-    'size': 23,
-    'word_count': 24,
-    'word_density': 25,
-    'zlabel': 26,
-    'ztext': 27
+    'comma_count': 4,
+    'comma_density': 5,
+    'font': 6,
+    'indent': 7,
+    'last_char': 8,
+    'line_h': 9,
+    'line_space_bottom': 10,
+    'line_space_top': 11,
+    'line_w': 12,
+    'line_x': 13,
+    'line_xt': 14,
+    'line_y': 15,
+    'line_yt': 16,
+    'page': 17,
+    'r_line_key': 18,
+    'r_line_ref': 19,
+    'r_line_x': 20,
+    'r_line_xt': 21,
+    'r_line_y': 22,
+    'r_line_yt': 23,
+    'r_page': 24,
+    'r_size': 25,
+    'size': 26,
+    'word_count': 27,
+    'word_density': 28,
+    'zlabel': 29,
+    'ztext': 30
 }
+
+COMMA = [',', ]
+Keywords = ['keywords:', 'keyword:', 'key words:',
+            'keywords', 'key words', 'keyword']
+References = ['references', 'reference', 'acknowledgements']
 
 model_config = {
     'model_1': {
         'name': 'Title_keyword_author',
-        'targets_name': ['标题', '作者', '关键词'],
+        'targets_name': ['其它', '标题', '作者', '关键词'],
         'targets': [1, 4, 5],
-        'features_name': ['r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt',
-                          'page', 'r_page', 'size', 'r_size'],
-        'features': [Features['r_line_x'], Features['r_line_y'], Features['r_line_xt'],
-                     Features['r_line_yt'], Features['page'], Features['r_page'],
-                     Features['size'], Features['r_size']],
+        'features_name': ['page', 'r_page', 'r_size', 'r_line_key',
+                          'comma_density', 'box_x', 'box_y',
+                          'box_xt', 'box_yt', 'size', 'font',
+                          'r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt'],
+        'features': [Features['page'], Features['r_page'], Features['r_size'],
+                     Features['r_line_key'], Features['comma_density'],
+                     Features['box_x'], Features['box_y'], Features['box_xt'],
+                     Features['box_yt'], Features['size'], Features['font'],
+                     Features['r_line_x'], Features['r_line_y'],
+                     Features['r_line_xt'], Features['r_line_yt']],
         'data_file': 'data/data.csv',
         'model_file': 'model/Title_keyword_author.model'
     },
     'model_2': {
         'name': 'Chapter_titles',
-        'targets_name': ['1级标题', '2级标题', '3级标题'],
+        'targets_name': ['其它', '1级标题', '2级标题', '3级标题'],
         'targets': [2, 3, 8],
-        'features_name': ['word_density', 'line_space_top', 'line_space_bottom',
+        'features_name': ['word_density', 'last_char', 'line_space_top', 'line_space_bottom',
                           'font', 'size', 'indent', 'word_count', 'line_w', 'line_h',
                           'r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt'],
-        'features': [Features['word_density'], Features['line_space_top'],
+        'features': [Features['word_density'], Features['last_char'], Features['line_space_top'],
                      Features['line_space_bottom'], Features['font'], Features['size'],
                      Features['indent'], Features['word_count'], Features['line_w'],
                      Features['line_h'], Features['r_line_x'], Features['r_line_y'],
@@ -68,33 +81,38 @@ model_config = {
     },
     'model_3': {
         'name': 'References',
-        'targets_name': ['参考文献', ],
+        'targets_name': ['其它', '参考文献'],
         'targets': [6, ],
-        'features_name': ['r_page', 'line_w', 'box_x', 'box_xt', 'r_size',
-                          'r_line_ref','word_density', 'indent', 'word_count', 'line_h'],
-        'features': [Features['r_page'], Features['line_w'], Features['box_x'],
+        'features_name': ['r_page', 'box_x', 'box_xt', 'r_size', 'r_line_ref',
+                          'word_density', 'indent', 'size', 'word_count', 'line_h',
+                          'r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt',
+                          'line_w', 'comma_density'],
+        'features': [Features['r_page'], Features['box_x'],
                      Features['box_xt'], Features['r_size'], Features['r_line_ref'],
-                     Features['word_density'], Features['indent'],
-                     Features['word_count'], Features['line_h']],
+                     Features['word_density'], Features['indent'], Features['size'],
+                     Features['word_count'], Features['line_h'], Features['r_line_x'],
+                     Features['r_line_y'], Features['r_line_xt'], Features['r_line_yt'],
+                     Features['line_w'], Features['comma_density']],
         'data_file': 'data/data.csv',
         'model_file': 'model/References.model'
     },
-    # 'model_4': {
-    #     'name': 'Abstract',
-    #     'targets_name': ['摘要',],
-    #     'targets': [7,],
-    #     'features_name': ['word_density', 'line_space_top', 'line_space_bottom', \
-    #                  'font', 'size', 'indent', 'word_count', 'line_w', 'line_h', \
-    #                  'r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt'],
-    #     'features': [24, 9, 8, 5, 22, 6, 23, 10, 7, 16, 18, 17, 19],
-    #     'data_file': 'data/data.csv',
-    #     'model_file': 'model/Abstract.model'
-    # }
+    'model_4': {
+        'name': 'Abstract',
+        'targets_name': ['其它', '摘要'],
+        'targets': [7, ],
+        'features_name': ['r_page', 'r_line_key', 'box_x', 'box_xt', 'r_size',
+                          'r_line_ref', 'word_density', 'indent', 'size', 'word_count', 'line_h',
+                          'r_line_x', 'r_line_y', 'r_line_xt', 'r_line_yt', 'line_w'],
+        'features': [Features['r_page'], Features['r_line_key'], Features['box_x'],
+                     Features['box_xt'], Features['r_size'], Features['r_line_ref'],
+                     Features['word_density'], Features['indent'],
+                     Features['size'], Features['word_count'], Features['line_h'],
+                     Features['r_line_x'], Features['r_line_y'], Features['r_line_xt'],
+                     Features['r_line_yt'], Features['line_w']],
+        'data_file': 'data/data.csv',
+        'model_file': 'model/Abstract.model'
+    }
 }
-
-Keywords = ['keywords:', 'keyword:', 'key words:',
-            'keywords', 'key words', 'keyword']
-References = ['references', 'reference', 'acknowledgements']
 
 
 def read_xml(xml_file='x.xml'):
@@ -169,7 +187,8 @@ def data_parse(txt):
                 text = ''
                 size = 0.0
                 font = 'KHJHPP+Gulliver'
-                charno = 0
+                charno = 0  # 字符数
+                commano = 0  # 逗号数
                 data.setdefault(lineno, {})
                 for content in textline.findall(".//text"):
                     # print(content.text, end='')
@@ -177,6 +196,9 @@ def data_parse(txt):
                         continue
                     text += content.text
                     charno += 1
+                    # 统计逗号个数
+                    if content.text in COMMA:
+                        commano += 1
 
                     if not 'size' in content.attrib or not 'font' in content.attrib:
                         continue
@@ -204,9 +226,12 @@ def data_parse(txt):
                 data[lineno]['line_h'] = float('%.2f' % line_h)  # 行高
                 data[lineno]['word_count'] = charno
                 data[lineno]['word_density'] = float(
-                    '%.2f' % (line_w / charno))  # 本行的字密度(替代表示字间距)
+                    '%.2f' % (charno / line_w))  # 本行的字密度(替代表示字间距)
                 data[lineno]['line_space_top'] = 0.0
                 data[lineno]['line_space_bottom'] = 0.0
+                data[lineno]['comma_count'] = commano
+                data[lineno]['comma_density'] = float(
+                    '%.2f' % (commano / line_w))
 
                 if total_page == 1:
                     data[lineno]['r_page'] = 0.0
@@ -258,9 +283,16 @@ def data_parse(txt):
 
                 # 相对于Keywords的位置
                 data[lineno]['r_line_key'] = lineno
-                if text.lower().strip().split(' ')[0] in Keywords or \
-                        text.lower().strip().split(':')[0] in Keywords:
+                if text.lower().strip(' \r\n').split(' ')[0] in Keywords or \
+                        text.lower().strip(' \r\n').split(':')[0] in Keywords:
                     keyword_lineno = lineno
+
+                # 最后一个字符是字母或数字
+                last_char = text.lower().strip(' \r\n')
+                if len(last_char) > 8 and not last_char[-1].isalpha() and not last_char[-1].isalpha():
+                    data[lineno]['last_char'] = 0
+                else:
+                    data[lineno]['last_char'] = 1
 
     print("Font size used mostly: ", size_counter.most_common(1))
     most_font_size = float(size_counter.most_common(1)[0][0])
@@ -385,6 +417,7 @@ def nonliner_normalization(lg_X, lg_column_maxs):
 if __name__ == '__main__':
     frames = []
     travel_dir('./train', frames)
+    # travel_dir('G:/workspace/code/python/data/train_cnki/', frames)
     df = pd.concat(frames)
     dataframe_to_csv(df, 'data/data.csv')
     # dataframe_to_csv(df, 'train_title_author_keyword.csv')
